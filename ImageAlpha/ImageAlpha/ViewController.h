@@ -8,10 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 {
-    IBOutlet UIImageView* imgBackground;
+    IBOutlet UIImageView* imgAnterior;
+    IBOutlet UIImageView* imgAtual;
+    IBOutlet UIImageView* imgProxima;
+    
+    IBOutlet UIPageControl* pgImgAtual;
+    
+    IBOutlet UIScrollView* scrollImgs;
+    
     IBOutlet UISlider* sliderAlpha;
+    
+    int indexImg;
 }
 
 -(IBAction)sliderAlphaChanged:(UISlider*)slider;

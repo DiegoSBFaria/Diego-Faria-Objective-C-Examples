@@ -22,6 +22,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    indexImg = 0;
+    
+    pgImgAtual.numberOfPages = 5;
+    pgImgAtual.currentPage = indexImg;
+    
+    [scrollImgs setContentSize:CGSizeMake([pgImgAtual numberOfPages] * 320, 460)];
 }
 
 - (void)viewDidUnload
@@ -59,7 +66,11 @@
 
 -(void)dealloc
 {
-    [imgBackground release];
+    [imgAtual release];
+    [imgAnterior release];
+    [imgProxima release];
+    [pgImgAtual release];
+    [scrollImgs release];
     [sliderAlpha release];
     
     [super dealloc];
@@ -69,7 +80,24 @@
 
 -(IBAction)sliderAlphaChanged:(UISlider *)slider
 {
-    imgBackground.alpha = sliderAlpha.value;
+    scrollImgs.alpha = slider.value;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{   
+    CGFloat pageWidth = scrollView.frame.size.width;
+    int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    [pgImgAtual setCurrentPage:currentPage];
+    
+    imgAnterior.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagem%d.png", currentPage - 1]];
+    imgAtual.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagem%d.png", currentPage]];
+    imgProxima.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagem%d.png", currentPage + 1]];
+    
+    imgProxima.frame = CGRectMake(320* (currentPage + 1), 0, 320, 460);
+    imgAtual.frame = CGRectMake(320* (currentPage ), 0, 320, 460);
+    imgAnterior.frame = CGRectMake(320* (currentPage - 1), 0, 320, 460);
 }
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B142FA714FAB35100176659 /* imagem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA314FAB35100176659 /* imagem1.png */; };
+		7B142FA814FAB35100176659 /* imagem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA414FAB35100176659 /* imagem2.png */; };
+		7B142FA914FAB35100176659 /* imagem3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA514FAB35100176659 /* imagem3.png */; };
+		7B142FAA14FAB35100176659 /* imagem4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA614FAB35100176659 /* imagem4.png */; };
 		7BF18E6614E894A900A893F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6514E894A900A893F8 /* UIKit.framework */; };
 		7BF18E6814E894A900A893F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6714E894A900A893F8 /* Foundation.framework */; };
 		7BF18E6A14E894A900A893F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6914E894A900A893F8 /* CoreGraphics.framework */; };
@@ -15,10 +19,14 @@
 		7BF18E7614E894A900A893F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18E7514E894A900A893F8 /* AppDelegate.m */; };
 		7BF18E7914E894A900A893F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF18E7814E894A900A893F8 /* ViewController.m */; };
 		7BF18E7C14E894A900A893F8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF18E7A14E894A900A893F8 /* ViewController.xib */; };
-		7BF18E8314E8957100A893F8 /* PacMaciPhone320x460Fantome.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF18E8214E8957100A893F8 /* PacMaciPhone320x460Fantome.png */; };
+		7BF18E8314E8957100A893F8 /* imagem0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF18E8214E8957100A893F8 /* imagem0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B142FA314FAB35100176659 /* imagem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem1.png; sourceTree = "<group>"; };
+		7B142FA414FAB35100176659 /* imagem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem2.png; sourceTree = "<group>"; };
+		7B142FA514FAB35100176659 /* imagem3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem3.png; sourceTree = "<group>"; };
+		7B142FA614FAB35100176659 /* imagem4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem4.png; sourceTree = "<group>"; };
 		7BF18E6114E894A900A893F8 /* ImageAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF18E6514E894A900A893F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BF18E6714E894A900A893F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,7 +40,7 @@
 		7BF18E7714E894A900A893F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7BF18E7814E894A900A893F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7BF18E7B14E894A900A893F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		7BF18E8214E8957100A893F8 /* PacMaciPhone320x460Fantome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PacMaciPhone320x460Fantome.png; sourceTree = "<group>"; };
+		7BF18E8214E8957100A893F8 /* imagem0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imagem0.png; path = ImageAlpha/imagem0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +57,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B142F9E14FAB2B600176659 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B142FA014FAB2CA00176659 /* Imagens */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7B142FA014FAB2CA00176659 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				7B142FA214FAB2D500176659 /* @2x */,
+				7B142FA114FAB2CF00176659 /* Normal */,
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
+		7B142FA114FAB2CF00176659 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				7BF18E8214E8957100A893F8 /* imagem0.png */,
+				7B142FA314FAB35100176659 /* imagem1.png */,
+				7B142FA414FAB35100176659 /* imagem2.png */,
+				7B142FA514FAB35100176659 /* imagem3.png */,
+				7B142FA614FAB35100176659 /* imagem4.png */,
+			);
+			name = Normal;
+			sourceTree = "<group>";
+		};
+		7B142FA214FAB2D500176659 /* @2x */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "@2x";
+			sourceTree = "<group>";
+		};
 		7BF18E5614E894A900A893F8 = {
 			isa = PBXGroup;
 			children = (
+				7B142F9E14FAB2B600176659 /* Resources */,
 				7BF18E6B14E894A900A893F8 /* ImageAlpha */,
 				7BF18E6414E894A900A893F8 /* Frameworks */,
 				7BF18E6214E894A900A893F8 /* Products */,
@@ -79,7 +124,6 @@
 		7BF18E6B14E894A900A893F8 /* ImageAlpha */ = {
 			isa = PBXGroup;
 			children = (
-				7BF18E8214E8957100A893F8 /* PacMaciPhone320x460Fantome.png */,
 				7BF18E7414E894A900A893F8 /* AppDelegate.h */,
 				7BF18E7514E894A900A893F8 /* AppDelegate.m */,
 				7BF18E7714E894A900A893F8 /* ViewController.h */,
@@ -153,7 +197,11 @@
 			files = (
 				7BF18E7014E894A900A893F8 /* InfoPlist.strings in Resources */,
 				7BF18E7C14E894A900A893F8 /* ViewController.xib in Resources */,
-				7BF18E8314E8957100A893F8 /* PacMaciPhone320x460Fantome.png in Resources */,
+				7BF18E8314E8957100A893F8 /* imagem0.png in Resources */,
+				7B142FA714FAB35100176659 /* imagem1.png in Resources */,
+				7B142FA814FAB35100176659 /* imagem2.png in Resources */,
+				7B142FA914FAB35100176659 /* imagem3.png in Resources */,
+				7B142FAA14FAB35100176659 /* imagem4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +324,7 @@
 				7BF18E8114E894A900A893F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
