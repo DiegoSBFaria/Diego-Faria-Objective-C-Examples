@@ -20,9 +20,16 @@
     
     IBOutlet UISlider* sliderAlpha;
     
+    IBOutlet UISwitch* swtChangeImg;
+    
+    NSTimer* autoChangeImg;
+    
     int indexImg;
 }
 
+-(void)trocarImg;
+
+-(IBAction)switchImageAuto:(UISwitch*)switchAuto;
 -(IBAction)sliderAlphaChanged:(UISlider*)slider;
 
 @end

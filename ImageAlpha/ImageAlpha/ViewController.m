@@ -72,15 +72,37 @@
     [pgImgAtual release];
     [scrollImgs release];
     [sliderAlpha release];
+    [swtChangeImg release];
     
     [super dealloc];
 }
 
 #pragma mark - IBAction
 
+-(IBAction)switchImageAuto:(UISwitch *)switchAuto
+{
+    if(switchAuto.on)
+    {
+        autoChangeImg = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(trocarImg) userInfo:nil repeats:YES];
+    }
+    else 
+    {
+        [autoChangeImg invalidate];
+        autoChangeImg = nil;
+    }
+}
+
 -(IBAction)sliderAlphaChanged:(UISlider *)slider
 {
     scrollImgs.alpha = slider.value;
+}
+
+#pragma mark - Trocar Imagem
+
+-(void)trocarImg
+{
+    int pagina = (indexImg + 1) % 5;
+    [scrollImgs scrollRectToVisible:CGRectMake(pagina * 320, scrollImgs.frame.origin.x, scrollImgs.frame.size.width, scrollImgs.frame.size.height) animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -89,6 +111,7 @@
 {   
     CGFloat pageWidth = scrollView.frame.size.width;
     int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    indexImg = currentPage;
     [pgImgAtual setCurrentPage:currentPage];
     
     imgAnterior.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagem%d.png", currentPage - 1]];
