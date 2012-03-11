@@ -11,6 +11,8 @@
 		7B142FA814FAB35100176659 /* imagem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA414FAB35100176659 /* imagem2.png */; };
 		7B142FA914FAB35100176659 /* imagem3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA514FAB35100176659 /* imagem3.png */; };
 		7B142FAA14FAB35100176659 /* imagem4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B142FA614FAB35100176659 /* imagem4.png */; };
+		7B8E1FDC150D4A82000D82D6 /* ListProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E1FDA150D4A82000D82D6 /* ListProjectsViewController.m */; };
+		7B8E1FDD150D4A82000D82D6 /* ListProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E1FDB150D4A82000D82D6 /* ListProjectsViewController.xib */; };
 		7BF18E6614E894A900A893F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6514E894A900A893F8 /* UIKit.framework */; };
 		7BF18E6814E894A900A893F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6714E894A900A893F8 /* Foundation.framework */; };
 		7BF18E6A14E894A900A893F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF18E6914E894A900A893F8 /* CoreGraphics.framework */; };
@@ -27,6 +29,9 @@
 		7B142FA414FAB35100176659 /* imagem2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem2.png; sourceTree = "<group>"; };
 		7B142FA514FAB35100176659 /* imagem3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem3.png; sourceTree = "<group>"; };
 		7B142FA614FAB35100176659 /* imagem4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagem4.png; sourceTree = "<group>"; };
+		7B8E1FD9150D4A82000D82D6 /* ListProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListProjectsViewController.h; sourceTree = "<group>"; };
+		7B8E1FDA150D4A82000D82D6 /* ListProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListProjectsViewController.m; sourceTree = "<group>"; };
+		7B8E1FDB150D4A82000D82D6 /* ListProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListProjectsViewController.xib; sourceTree = "<group>"; };
 		7BF18E6114E894A900A893F8 /* ImageAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF18E6514E894A900A893F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BF18E6714E894A900A893F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +135,9 @@
 				7BF18E7814E894A900A893F8 /* ViewController.m */,
 				7BF18E7A14E894A900A893F8 /* ViewController.xib */,
 				7BF18E6C14E894A900A893F8 /* Supporting Files */,
+				7B8E1FD9150D4A82000D82D6 /* ListProjectsViewController.h */,
+				7B8E1FDA150D4A82000D82D6 /* ListProjectsViewController.m */,
+				7B8E1FDB150D4A82000D82D6 /* ListProjectsViewController.xib */,
 			);
 			path = ImageAlpha;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				7B142FA814FAB35100176659 /* imagem2.png in Resources */,
 				7B142FA914FAB35100176659 /* imagem3.png in Resources */,
 				7B142FAA14FAB35100176659 /* imagem4.png in Resources */,
+				7B8E1FDD150D4A82000D82D6 /* ListProjectsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +224,7 @@
 				7BF18E7214E894A900A893F8 /* main.m in Sources */,
 				7BF18E7614E894A900A893F8 /* AppDelegate.m in Sources */,
 				7BF18E7914E894A900A893F8 /* ViewController.m in Sources */,
+				7B8E1FDC150D4A82000D82D6 /* ListProjectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

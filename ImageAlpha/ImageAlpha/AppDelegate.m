@@ -8,17 +8,19 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "ListProjectsViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize navigationController = _navigationController;
 @synthesize viewController = _viewController;
 
 - (void)dealloc
 {
     [_window release];
     [_viewController release];
+    [_navigationController release];
     [super dealloc];
 }
 
@@ -26,8 +28,9 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    self.viewController = [[[ListProjectsViewController alloc] initWithNibName:@"ListProjectsViewController" bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
